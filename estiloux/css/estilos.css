@@ -8,27 +8,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+    border: 2px solid purple;
+}
 
 body {
     background-color: #ffffff;
+    border:  2px solid rgb(182, 51, 78);
 }
 
 header {
     width: 100%;
-    height: 80px;
+    height: 10%;
     background-color: gray;
 }
+
 .header-flex {
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: 300;
     color: white;
+}
+
+.ux {
+
+    font-size: 30px;
+    margin-left: 3px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: monospace;
 }
 
 /* caixa para centralizar o conteúdo */
@@ -37,7 +53,7 @@ h1 {
     height: 100%;
     max-width: 992px;
     margin: 0 auto;
-  /* border: 3px solid skyblue ; */
+    /* border: 3px solid skyblue ;  */
 }
 
 nav {
@@ -46,5 +62,54 @@ nav {
     align-items: center;
     width: 400px;
     height: 100%;
-    border: 3px solid palevioletred;
+    /* border: 3px solid rgb(112, 119, 216); */
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgb(229, 229, 90); */
+    width: 100px;
+    height: 100%;
+    color: #e8e8e8;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    transition: background-color 0.4s, margin-left .8s, margin-bottom .8s;
+}
+
+nav a:hover {
+    /* color: rgb(138, 202, 212); */
+    /* text-decoration: underline; */
+    /* font-family: italic; */
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+main {
+    width: 100%;
+    height: 80%;
+    border: 3px solid rebeccapurple ;
+}
+.main-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: teal;
+    border: 2px solid green;
+}
+.harmonia {
+    margin: 10px;
+    width: 700px;
+    height: 500px;
+    border: 2px solid rgb(205, 158, 41);
+}
+aside {
+    margin: ;
+    width: 500px;
+    height: 250px;
+    background-color: black;
+    border: 2px solid blue;
 }
